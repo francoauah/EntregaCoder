@@ -7,4 +7,4 @@ from ventas.models import Articulos
 def articulo(request):
     art=Articulos(Nombre='mesa', Seccion='muebles', PrecioArticulo=20000)
     art.save()
-    return HttpResponse(f"Se agrego un nuevo elemento al catalogo {art.Nombre}, con un precio de {art.PrecioArticulo}")
+    return HttpResponse(f"Se agrego un nuevo elemento al catalogo: {art.Nombre}, con un precio de {art.PrecioArticulo}")
