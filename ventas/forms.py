@@ -11,22 +11,6 @@ class ArticuloBusqueda(forms.Form):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class PedidosFormulario(forms.Form):
     NumeroDePedido=forms.IntegerField()
     Fecha=forms.DateField()

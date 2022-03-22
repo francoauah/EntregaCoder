@@ -1,8 +1,6 @@
 import email
 from django.db import models
 
-# Create your models here.
-
 class Clientes(models.Model):
     Nombre=models.CharField(max_length=30)
     Direccion=models.CharField(max_length=30)

@@ -3,13 +3,6 @@ from django.shortcuts import render
 from .models import Articulos, Pedidos, Clientes
 from .forms import ArticuloFormulario, PedidosFormulario, ClientesFormulario, ArticuloBusqueda
 
-#Enter your views here.
-
-# def articulo(request):
-#     art=Articulos(Nombre='mesa', Seccion='muebles', PrecioArticulo=20000)
-#     art.save()
-#     return HttpResponse(f"Se agrego un nuevo elemento al catalogo: {art.Nombre}, con un precio de {art.PrecioArticulo}")
-
 def crearArticulo(request):
 
     if request.method =='POST':
