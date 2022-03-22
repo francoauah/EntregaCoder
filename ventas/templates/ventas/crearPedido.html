@@ -1,0 +1,29 @@
+{% extends 'base/index.html' %}
+
+{% block tituloPedidos %}
+    <title>Crear Pedidos</title>
+{% endblock tituloPedidos %}
+
+
+{% block headerPedidos %}
+<body>
+    <header>
+    <h1>Crea un pedido aqui</h1>
+    </header>
+</body>
+{% endblock headerPedidos %}
+
+
+
+
+
+
+{% block crearPedido %}
+    <form action="" method="post">
+        {% csrf_token %}
+        <table>
+            {{form.as_table}}
+        </table>
+        <input type="submit" value="Crear">
+    </form>
+{% endblock crearPedido %}

@@ -1,0 +1,27 @@
+{% extends 'base/index.html' %}
+
+
+{% block tituloArticulo %}
+    <title>Crear Articulo</title>
+{% endblock tituloArticulo %}
+
+
+{% block headerArticulo %}
+<body>
+    <header>
+    <h1>Crea un articulo aqui</h1>
+    </header>
+</body>
+{% endblock headerArticulo %}
+
+
+
+{% block crearArticulo %}
+    <form action="" method="post">
+        {% csrf_token %}
+        <table>
+            {{form.as_table}}
+        </table>
+        <input type="submit" value="Crear">
+    </form>
+{% endblock crearArticulo %}

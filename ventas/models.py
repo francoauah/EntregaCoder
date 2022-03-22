@@ -9,6 +9,8 @@ class Clientes(models.Model):
     Email=models.EmailField()
     Telefono=models.CharField(max_length=20)
 
+    def __str__(self):
+        return f'Cliente: {self.Nombre} con domicilio en {self.Direccion}'
 
 class Articulos(models.Model):
     Nombre=models.CharField(max_length=50)

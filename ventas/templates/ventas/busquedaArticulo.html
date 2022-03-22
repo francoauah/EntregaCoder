@@ -1,0 +1,64 @@
+{% extends 'base/index.html' %}
+
+
+{% block tituloClientes %}
+    <title>Buscar Articulos</title>
+{% endblock tituloClientes %}
+
+{% block headerPedidos %}
+<body>
+    <header>
+    <h1>Busca un articulo aqui</h1>
+    </header>
+</body>
+{% endblock headerPedidos %}
+
+
+
+
+{% block buscarArticulo %}
+    <form action="" method="get">
+        {% csrf_token %}
+        <table>
+            {{form.as_table}}
+        </table>
+        <input type="submit" value="Buscar">
+    </form>
+
+    {% for art in articulos %}
+    <li>{{art}}</li>
+    {% endfor %}
+
+{% endblock buscarArticulo %}
+
+
+<!-- <html>
+
+
+<head>
+
+<title> Busqueda de productos </title>
+
+</head>
+
+<body>
+
+
+    <form action="buscar/" method="GET">
+
+        <input type="text" name="prd">
+
+        <input type="submit" value="Buscar">
+
+
+    </form>
+
+
+</body>
+
+
+
+
+
+
+</html> -->
